@@ -1,0 +1,29 @@
+<div class="user-form">
+<h2 class="cta">Join</h2>
+<h3 class="trigger">Learn how to build real products</h3>
+<%= form_for(@user) do |f| %>  
+       <!--
+        <div class="field"> 
+          <%= f.text_field :email %> 
+          <%= f.password_field :password %> 
+        </div> 
+        <div class="actions"> 
+          <%= f.submit "Join" %> 
+        </div> -->
+        
+        <div class="group">      
+            <%= f.text_field :email, :required => true %>
+            <span class="bar"></span>
+            <label>Email</label>
+        </div>
+        
+        <div class="group">      
+            <%= f.password_field :password, :required => true %> 
+            <span class="bar"></span>
+            <label>Password</label>
+        </div>
+        <div class="actions">
+         <%= f.submit "Join" %>
+        </div> 
+<% end %>
+</div>

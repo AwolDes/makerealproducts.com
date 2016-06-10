@@ -1,0 +1,47 @@
+<% if current_user %> 
+<nav class="menu">
+        <ul class="items">
+            <!--<li class="menu-item"><span class="typcn typcn-flash"></span>Dash</li>-->
+            <li class="menu-item"><span class="typcn typcn-edit"></span><a href="/lessons">Lessons</a></li>
+            <li class="menu-item"><span class="typcn typcn-group"></span> <a href="https://twitter.com/AwolDes" target="_blank" >Support</a></li>
+            <li class="menu-item-normal pull-right"><a href="/logout">Logout</a></li>
+        </ul>
+</nav>
+
+<h1 class="title sub-page">Lessons</h1>
+<div class="grid lessons-grid">
+<% @lessons.each do |lesson| %>
+       <div class="col-5">
+       
+        <div class="card">
+            <%= image_tag lesson.image, class:"lesson-shot" %>
+            <div class="lesson-tag"><%= lesson.difficulty %></div>
+            <h3 class="lesson-title"><%= lesson.title %></h3>
+            <p class="lesson-blurb"><%= lesson.blurb %></p>
+            <%= link_to lesson.btn, post_path(lesson), class:"more" %>
+        </div>
+    </div>
+    
+<% end %>
+ 
+   
+    <div class="col-5">
+        <div class="card">
+            <div class="dotted">
+                <h3 class="lesson-title">What's next?<br> Tell me!</h3>
+                <a href="https://twitter.com/intent/tweet?screen_name=AwolDes&text=I%20need%20some%20help%20on%20%23MRP" class="twitter-mention-button" data-size="large" data-related="AwolDes">Tweet to @AwolDes</a><br>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+           
+               <div class="up-button email-me"><a href="mailto:awoldes@gmail.com?subject=Mail from MRP">Email me</a>
+            </div>
+        </div>
+    </div>  
+       
+</div>
+       
+<% else %> 
+       
+<h1 class="denied">Please create an account or log in</h1>
+       
+<%end%>
+        

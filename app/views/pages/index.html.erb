@@ -1,0 +1,173 @@
+<% if current_user %> 
+<nav class="menu">
+        <ul class="items">
+            <!--<li class="menu-item"><span class="typcn typcn-flash"></span>Dash</li>-->
+            <li class="menu-item"><span class="typcn typcn-edit"></span><a href="/lessons">Lessons</a></li>
+            <li class="menu-item"><span class="typcn typcn-group"></span> Support</li>
+            <li class="menu-item-normal pull-right"><a href="/logout">Logout</a></li>
+        </ul>
+</nav>
+
+<% else %>
+<nav class="menu">
+    <%= link_to('/signup') do%>
+        
+        <div class="up-button"><span class="typcn typcn-flash"></span> Join <span class="typcn typcn-flash"></span></div>
+        
+                  
+    <%end%>
+       
+    <%= link_to('/login') do%>
+        
+        <div class="button">Sign In</div>
+       
+    <%end%> 
+</nav>
+
+<% end %>
+<div class="home">
+        <div class="content">
+        
+        <div class="box"><h1 class="title">Make Real Products</h1></div>
+        
+        <%= link_to('/signup') do%>
+        
+        <div class="up-button-large"><span class="typcn typcn-flash"></span> Join Now <span class="typcn typcn-flash"></span></div>
+        
+                  
+        <%end%>
+        
+        
+        
+        <div id="mc_embed_signup">
+<form action="//thesocialbots.us10.list-manage.com/subscribe/post?u=37bb04574e3036b194c991dd5&amp;id=35701c3740" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label class="call2action" for="mce-EMAIL">Get Updates</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="you@email.com" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_37bb04574e3036b194c991dd5_35701c3740" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="up-button signup-btn" style=""></div>
+    </div>
+</form>
+</div>
+        
+        
+     
+        
+        </div>
+       <!--<div class="overlay"></div>  
+        <div class="splash">
+            <div class="image-wrap">
+                <div class="regular" style="background:url(/assets/code.jpg) no-repeat center center; background-size: cover;"></div>
+            </div>
+        </div>-->
+</div>
+
+
+<div class="lessons">
+    <h1 class="sub-title">Teaching you from the start</h1>
+    <div class="grid right">
+        <div class="col-4">
+           <span class="typcn typcn-code-outline"></span>
+            <h2 class="info-head">Small Builds</h2>
+            <p class="course-blurb">For absolute beginners who need the basics of building</p>
+            <%= link_to('/signup') do %>
+            <div class="more mid">Start</div>
+            <% end %>
+        </div>
+        <div class="col-4">
+           <span class="typcn typcn-cog-outline"></span>
+            <h2 class="info-head">Simple Builds</h2>
+            <p class="course-blurb">Simple builds for quick products like Tinder style apps</p>
+            <%= link_to('/signup') do %>
+            <div class="more mid">Start</div>
+            <% end %>
+        </div>
+        <div class="col-4">
+           <span class="typcn typcn-puzzle-outline"></span>
+            <h2 class="info-head">Advanced Builds</h2>
+            <p class="course-blurb">Advanced builds for a range of real world projects.</p>
+            <%= link_to('/signup') do %>
+            <div class="more mid">Start</div>
+            <% end %>
+        </div>
+        <div class="col-4">
+           <span class="typcn typcn-spanner-outline"></span>
+            <h2 class="info-head">Real Builds</h2>
+            <p class="course-blurb">Build real world products like HackerNews &amp; Medium </p>
+            <%= link_to('/signup') do %>
+            <div class="more mid">Start</div>
+            <% end %>
+        </div>
+    </div>
+    
+</div>
+
+
+<div class="courses">
+    <h2 class="sub-title">Current Lessons</h2>
+    <div class="grid">
+       <% @lessons.each do |lesson| %>
+       <div class="col-5">
+       
+        <div class="card">
+            <%= image_tag lesson.image, class:"lesson-shot" %>
+            <div class="lesson-tag"><%= lesson.difficulty %></div>
+            <h3 class="lesson-title"><%= lesson.title %></h3>
+            <p class="lesson-blurb"><%= lesson.blurb %></p>
+            <%= link_to "Build it", '/signup', class:"more" %>
+        </div>
+    </div>
+        <%end%>
+        <!--<div class="col-5">
+            <div class="card">
+               <img src="assets/code.jpg" alt="" class="lesson-shot">
+               <div class="lesson-tag">Small</div>
+                <h3 class="lesson-title">Trip List</h3>
+                <p class="lesson-blurb">This lesson teaches you how to build a list of items and filter them</p>
+                <div class="more build">Build!</div>
+                
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="card">
+               <img src="assets/code.jpg" alt="" class="lesson-shot">
+               <div class="lesson-tag">Small</div>  
+                <h3 class="lesson-title">Video Game Forum</h3>
+                <p class="lesson-blurb">In this lesson you'll learn how to build a simple forum!</p>
+                <div class="more build">Build!</div>
+              
+            </div>
+        </div>
+        
+        <div class="col-5">
+            <div class="card">
+               <img src="assets/code.jpg" alt="" class="lesson-shot">
+               <div class="lesson-tag">Simple</div>  
+                <h3 class="lesson-title">Rinder</h3>
+                <p class="lesson-blurb">This lesson explains how to build a Tinder Style app for anything!</p>
+                <div class="more build">Build!</div>
+              
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="card">
+               <div class="dotted">
+                <h3 class="lesson-title">What's next?<br> Tell me!</h3>
+                </div>
+            </div>
+            -->
+            <div class="col-5">
+        <div class="card">
+            <div class="dotted">
+                <h3 class="lesson-title">What's next?<br> Tell me!</h3>
+                <a href="https://twitter.com/intent/tweet?screen_name=AwolDes&text=I%20need%20some%20help%20on%20%23MRP" class="twitter-mention-button" data-size="large" data-related="AwolDes">Tweet to @AwolDes</a><br>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+           
+               <div class="up-button email-me"><a href="mailto:awoldes@gmail.com?subject=Mail from MRP">Email me</a></div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>

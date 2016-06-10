@@ -1,0 +1,56 @@
+// Place all the styles related to the Lessons controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/*Post */
+
+
+.post{
+    position: absolute;
+    width:70%;
+    height:auto;
+    background-color: white;
+    left:15%;
+    top:110px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 20px 0 rgba(0,0,0,1);
+    
+    font-family: 'Oxygen', sans-serif;
+    padding:10px;
+    z-index: 1;
+}
+
+.profile{
+    width:60px;
+    height:60px;
+    border-radius: 50px;
+    
+}
+
+.preview{
+    width:100%;
+    height:auto;
+}
+
+.prewview-small{
+    width:50%;
+}
+
+.author{
+    color:#EC2C47;
+    font-size: 12px;
+    
+    
+}
+
+.post-title{
+    position: relative;
+    text-align: center;
+    font-size: 100px;
+}
+
+.lesson{
+    margin-top:50px;
+}
+
+

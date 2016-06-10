@@ -1,0 +1,23 @@
+<div class="user-form">
+<h2>Log in</h2>
+<h3>Get back to making awesome stuff!</h3>
+ <%= form_for(:session, url: login_path) do |f| %> 
+  
+  
+  <div class="group">      
+            <%= f.text_field :email, :required => true %>
+            <span class="bar"></span>
+            <label>Email</label>
+        </div>
+        
+        <div class="group">      
+            <%= f.password_field :password, :required => true %> 
+            <span class="bar"></span>
+            <label>Password</label>
+        </div>
+        <div class="actions">
+           <%= f.submit "Log in", class: "btn-submit" %>
+        </div> 
+
+<% end %>
+</div>

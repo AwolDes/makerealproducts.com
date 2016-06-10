@@ -1,0 +1,311 @@
+@media (min-width: 780px){
+    .col-4{
+        width:40%;
+        padding:20px;
+        float:left;
+        text-align: center;
+        position: relative;
+        display: inline;
+        margin-left:0;
+    }
+    
+    .col-5{
+        width:30%;
+        padding:20px;
+        float:left;
+        text-align: center;
+        position: relative;
+        display: inline;
+        margin-left:0;
+    }
+    
+    
+}
+
+@media (max-width: 1065px){
+    .col-5{
+        width:40%;
+        margin-left:5%;
+    }
+    
+    .dotted{
+        width:73% !important;
+        height:80% !important;
+        margin-left:9% !important;
+    }
+    
+    .up-button-large{
+        margin-left:40%;
+    }
+    
+    
+}
+
+@media (max-width: 775px){
+    .card{
+        text-align: center;
+    }    
+    
+}
+
+@media (max-width: 768px){
+    .menu{
+            padding-top:20px;
+        padding-bottom:13px;
+    }
+    
+    .sub-page{
+        margin-top:80px;
+    }
+}
+
+@media (max-width: 465px){
+    .menu{
+            padding-top:11px;
+        padding-bottom:4px;
+        }
+}
+
+@media (max-width: 815px){
+    .col-5{
+        width:50%;
+        margin-left:25%;
+    }
+    
+    .build{
+        margin-left:5% !important;
+    }
+}
+
+@media (max-width: 990px){
+    .more{
+        margin-left:30% !important;
+    }
+    
+    .up-button-large{
+        margin-left:39%;
+    }
+    
+    .card .more{
+        margin-left:33% !important;
+    }
+}
+
+@media (max-width: 890px){
+    .more{
+        margin-left:25%;
+    }
+    
+    .up-button-large{
+        margin-left:37%;
+    }
+}
+
+@media (max-width: 780px){
+    .more{
+        margin-left:40% !important;
+    }
+    
+    .build{
+        margin-left:30% !important;
+    }
+    
+    .right{
+        margin-left: 0;
+    }
+    
+    .dotted{
+        width:30% !important;
+        height:65% !important;
+        margin-left:9% !important;
+    }
+    
+    .up-button-large{
+        margin-left:36%;
+    }
+    
+    #mce-EMAIL{
+        width:70% !important;
+    }
+    
+    .post{
+        width:80%;
+        left:10%;
+    }
+}
+
+@media (max-width:770px){
+    .signup-btn{
+        margin-left:40%;
+        margin-top:10px;
+        width:20%;
+    }
+    
+    .dotted{
+        width:40% !important;
+        margin-left:5% !important;
+        height:80% !important;
+    }
+    
+    .card .more{
+        margin-left:33% !important;
+    }
+}
+
+@media (max-width:680px){
+    .col-5{
+        width:70%;
+        margin-left:15%;
+    }
+    
+    .card{
+        height:530px !important;
+    }
+    
+    .build{
+        margin-left:35% !important;
+    }
+    
+    .dotted{
+        width:50% !important;
+        height:80% !important;
+        margin-left:9% !important;
+    }
+    
+    .up-button-large{
+        margin-left:30%;
+    }
+    
+    #mce-EMAIL{
+        width:70% !important;
+    }
+}
+
+@media (max-width: 650px){
+    .more{
+        margin-left:37% !important;
+    }
+}
+
+@media (max-width: 550px){
+    .more{
+        margin-left:35% !important;
+    }
+    
+    .build{
+        margin-left:30% !important;
+    }
+    
+    .up-button-large{
+        margin-left:30%;
+    }
+    
+    .signup-btn{
+        width:40%;
+        margin-left:30%;
+    }
+}
+
+@media (max-width: 480px){
+    .up-button-large{
+        margin-left:25%;
+    }
+    
+    .content{
+        margin-top:70px;
+    }
+    
+    .lessons{
+        padding:3px !important;
+    }
+    
+    .card{
+        height:420px !important;
+    }
+    
+    .card .more{
+        margin-left:30% !important;
+    }
+    
+    .title{
+        font-size:40px;
+        margin-bottom: 50px;
+        margin-top:100px;
+    }
+    
+    .box{
+        width:85%;
+        height:auto;
+        left:33.5%;
+    }
+    
+    .box .title{
+        margin-top:50px;
+    }
+    
+    .dotted{
+        height:65% !important;
+    }
+    
+    .email-me{
+        margin-left:27% !important;
+    }
+}
+
+@media (max-width: 468px){
+    .up-button-large{
+        margin-left:28%;
+    }
+}
+
+@media (max-width: 440px){
+    .up-button-large{
+        margin-left:24%;
+    }
+    
+    .lessons{
+        padding:0px;
+    }
+    
+    .col-5{
+        width:80%;
+        margin-left:10%;
+    }
+    
+    .card{
+        height:450px !important;
+    }
+}
+
+
+@media (max-width: 375px){
+    
+    .up-button-large{
+        margin-left:18%;
+    }
+    
+    .dotted{
+        width:60% !important;
+    }
+    
+    .more{
+        margin-left:33% !important;
+    }
+    
+}
+
+@media (max-width: 320px){
+    
+    .up-button-large{
+        margin-left:13%;
+    }
+    
+    .card .more{
+        margin-left:25% !important;
+    }
+    
+    .more{
+        margin-left:30% !important;
+    }
+    
+}

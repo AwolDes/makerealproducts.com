@@ -1,0 +1,24 @@
+<% if current_user %>
+<nav class="menu">
+        <ul class="items">
+            <!--<li class="menu-item"><span class="typcn typcn-flash"></span>Dash</li>-->
+             <li class="menu-item"><span class="typcn typcn-edit"></span><a href="/lessons">Lessons</a></li>
+            <li class="menu-item"><span class="typcn typcn-group"></span> <a href="https://twitter.com/AwolDes" target="_blank" >Support</a></li>
+            <li class="menu-item-normal pull-right"><a href="/logout">Logout</a></li>
+        </ul>
+</nav>
+<div class="breaker"></div>
+<div class="post">
+    
+            
+    <h1 class="post-title"><%= @title %></h1>
+    <%= image_tag "Profile.jpg", class:"profile" %>
+    <p class="author">By Austin Wilshire</p>
+    <%= @content.html_safe %>
+
+<% else %> 
+       
+<h1 class="denied">Please <%= link_to('create an account', '/signup')%> or <%= link_to('log in', '/login') %></h1>
+       
+<%end%>
+   
